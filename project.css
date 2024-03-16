@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+
+body{
+  background: #f7f7f7;
+  font-family: 'Poppins', sans-serif;
+  background-color:#010136;
+}
+
+
+header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.7rem 10%;
+  height: 6.5rem;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(146,161,176,.3);
+}
+
+
+h2{ 
+  font-size: 100px;
+  align-items:top;
+  color: #fff;
+}
+.game {
+  width: 100%;
+  margin: 5%;
+  padding: 5%;
+  border-color: #f7f7f7;
+  border-width: 50px;
+  border-style: groove;
+  text-align: center;
+  background-image:url(image/background.jpg);
+  background-position: fixed;
+  background-repeat: no-repeat;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #f9c98e;
+  box-shadow: 0 1px 4px rgba(106, 165, 223, 0.3);
+  
+}
+
+.heading span{
+  color: rgb(115, 3, 167);
+}
+header .logo{
+  font-size: 1.9rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: #0E2431;
+}
+section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+header .logo i {
+  font-size: 2.2rem;
+}
+header .logo:hover {
+  color: #fc8c05;
+}
+header .navbar ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .navbar li{
+  margin-left: 2.5rem;
+}
+header .navbar ul li a{
+  font-size: 1.57rem;
+  color: #0E2431;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.04rem;
+}
+header .navbar ul li a.active,
+header .navbar ul li a:hover{
+  color: #011aff;
+  border-bottom: .2rem solid #011aff;
+  padding: .5rem 0;
+}
+#menu{
+  font-size: 3rem;
+  cursor: pointer;
+  color: rgb(24, 2, 63);
+  display: none;
+}
+@media(max-width:768px){
+  #menu{
+      display: block;
+  }
+  header .navbar{
+    position: fixed;
+    top: 6.5rem; right: -120%;
+    width: 75%;
+    height: 100%;
+    text-align: left;
+    align-items: flex-start;
+    background-color: #0e0f31;
+  }
+  header .navbar ul{
+    flex-flow: column;
+    padding: 1rem;
+  }
+  header .navbar ul li{
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: .5rem;
+    width: 26rem;
+  }
+  header .navbar ul li a{
+    display: block;
+    padding: 1rem;
+    text-align: left;
+    color: #fff;
+    font-size: 2rem;
+  }
+  header .navbar ul li a.active,
+  header .navbar ul li a:hover{
+    padding: 1rem;
+    color: #fff;
+    border-radius: .5rem;
+    border-bottom: .5rem solid #011aff;
+  }
+  .fa-times{
+    transform: rotate(180deg);
+  }
+  header .navbar.nav-toggle{
+    right: 0; 
+  }
+}
+.work{
+  background: linear-gradient(to bottom, #010136, #00003a);
+  margin-top: 5rem;
+}
+.work h2{
+  color: #fff;
+  padding: 1rem;
+}
+.work .heading span{
+  color: rgb(255, 230, 0);
+}
+.work .button-group{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1rem;
+  margin: 2rem auto;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.work .button-group .btn{
+  outline: none;
+  padding: 1rem 2rem;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.work .button-group .btn:hover{
+  background-color: #fff;
+  color: #000;
+}
+.work .button-group .btn.is-checked{
+  background-color: #fff;
+  color: #000;
+}
+.work .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  margin: 2rem;
+}
+.work .box-container .box{
+  flex:1 1 30rem;
+  border-radius: .5rem;
+  box-shadow: 0 .7rem 1rem rgba(0,0,0,.3);
+  position: relative;
+  overflow:hidden;
+  height:30rem;
+  background: #fff;
+  border: none;
+}
+.work .box-container .box img{
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+}
+.work .box-container .box .content{
+  height: 100%;
+  width:100%;
+  position: absolute;
+  top:85%; left:0;
+  background:rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+}
+.work .box-container .box .content .tag{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+  width: 100%;
+  padding-left: 1rem;
+  background: #ffd900;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+  width: .8rem;
+}
+html::-webkit-scrollbar-track{
+  background: rgb(235, 202, 245);
+}
+html::-webkit-scrollbar-thumb{
+  background: #420177;
+}
